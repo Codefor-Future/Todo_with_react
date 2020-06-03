@@ -43,7 +43,9 @@ class todo extends Component {
                             return(
                                 <li key={index}>
                                     <div className="todo">{data}</div>
-                                    <div className="del"><i class="far fa-trash-alt" onClick={()=>this.deleteTodo(index)}></i></div>
+                                    <div className="del">
+                                        <i class="far fa-trash-alt" onClick={()=>this.deleteTodo(index)}></i>
+                                    </div>
                                 </li>
                             )
                         })
